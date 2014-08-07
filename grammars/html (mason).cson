@@ -4,6 +4,7 @@
   'dhandler'
   'md'
   'mc'
+  'mas'
 ]
 'name': 'HTML (Mason)'
 'patterns': [
