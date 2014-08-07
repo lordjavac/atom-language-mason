@@ -1,0 +1,22 @@
+'.text.html.mason':
+  '<%args>':
+    'prefix': 'args'
+    'body': '<%args>\n$1\n</%args>'
+  '<%def>':
+    'prefix': 'def'
+    'body': '<%def ${1:name}>\n$2\n</%def>'
+  '<%doc>':
+    'prefix': 'doc'
+    'body': '<%doc> $1 </%doc>'
+  '<%flags>':
+    'prefix': 'flags'
+    'body': '<%flags>\n$1\n</%flags>\n'
+  '<%init>':
+    'prefix': 'init'
+    'body': '<%init>\n$1\n</%init>\n'
+  '<%method>':
+    'prefix': 'method'
+    'body': '<%method ${1:name}>\n$2\n</%method>'
+  '<%perl>':
+    'prefix': 'perl'
+    'body': '<%perl>\n$1\n</%perl>'
