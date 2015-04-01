@@ -62,7 +62,7 @@
     'beginCaptures':
       '1':
         'name': 'punctuation.section.embedded.perl.mason'
-    'end': '$\\n?'
+    'end': '(?!\\G)'
     'name': 'source.perl.mason.line'
     'patterns': [
       {
