@@ -58,17 +58,17 @@
     ]
   }
   {
-    'begin': '^(%)'
-    'beginCaptures':
+    'captures':
       '1':
         'name': 'punctuation.section.embedded.perl.mason'
-    'end': '$\\n?'
+      '2':
+        'patterns': [
+          {
+            'include': 'source.perl'
+          }
+        ]
+    'match': '^(%)(.+)\\n$'
     'name': 'source.perl.mason.line'
-    'patterns': [
-      {
-        'include': 'source.perl'
-      }
-    ]
   }
   {
     'begin': '(<&\\|)((\\w|\\.|\\:)*)(?!&>)'
