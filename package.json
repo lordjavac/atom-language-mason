@@ -1,6 +1,6 @@
 {
   "name": "language-mason",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "HTML (Mason) language grammar",
   "repository": "https://github.com/lordjavac/atom-language-mason",
   "license": "MIT",
