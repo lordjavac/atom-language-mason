@@ -9,7 +9,7 @@
 'name': 'HTML (Mason)'
 'patterns': [
   {
-    'begin': '(<%(perl|attr|global|once|init|cleanup|requestlocal|requestonce|shared|threadlocal|threadonce|flags)( scope.*?)?>)'
+    'begin': '(<%(perl|attr|global|once|init|cleanup|requestlocal|requestonce|shared|threadlocal|threadonce|flags|filter)( scope.*?)?>)'
     'captures':
       '1':
         'name': 'punctuation.section.embedded.perl.mason'
