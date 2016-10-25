@@ -1,3 +1,6 @@
+## 2.0.6 - lordjavac
+* Add filter snippet.
+
 ## 2.0.5 - dbstraffin
 * Fix highlighting for filter tag.
 

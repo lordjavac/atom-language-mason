@@ -20,3 +20,6 @@
   '<%perl>':
     'prefix': 'perl'
     'body': '<%perl>\n$1\n</%perl>'
+  '<%filter>':
+    'prefix': 'filter'
+    'body': '<%filter>\n$1\n</%filter>'
