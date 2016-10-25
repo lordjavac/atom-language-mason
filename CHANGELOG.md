@@ -1,3 +1,6 @@
+## 2.0.5 - dbstraffin
+* Fix highlighting for filter tag.
+
 ## 2.0.4
 * Moved scoped-properties to settings.
 
