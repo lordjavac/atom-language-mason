@@ -1,3 +1,6 @@
 '.text.html.mason':
   'editor':
     'foldEndPattern': '(</(?i:(head|table|div|style|script|ul|ol|form|dl))>|\\})'
+  '.platform-darwin atom-workspace atom-text-editor:not([mini])':
+    'cmd->': 'language-mason:insert-interpolation'
+    'cmd-<': 'language-mason:insert-method-call'
