@@ -10,13 +10,13 @@
 'name': 'HTML (Mason)'
 'patterns': [
   {
-    'begin': '(<%(perl|attr|global|once|init|cleanup|requestlocal|requestonce|shared|threadlocal|threadonce|flags|filter)( scope.*?)?>)'
+    'begin': '(?i)(<(%(perl|attr|global|once|init|cleanup|requestlocal|requestonce|shared|threadlocal|threadonce|flags|filter)( scope.*?)?)>)'
     'captures':
       '1':
         'name': 'punctuation.section.embedded.perl.mason'
       '2':
         'name': 'keyword.control'
-    'end': '(<\\/%(\\2)>)[^\\n]*\\n?'
+    'end': '(?i)(<\\/(\\2)>)[^\\n]*\\n?'
     'name': 'source.perl.mason.block'
     'patterns': [
       {
@@ -25,35 +25,35 @@
     ]
   }
   {
-    'begin': '(<(%text)>)'
+    'begin': '(?i)(<(%text)>)'
     'captures':
       '1':
-        'name': 'keyword.control'
+        'name': 'punctuation.section.embedded.text'
       '2':
-        'name': 'variable.other'
+        'name': 'keyword.control'
     'end': '(</(%text)>)'
-    'name': 'source.perl.mason.doc'
+    'name': 'source.perl.mason.embedded.text'
     'patterns': [
       {
-        'begin': '(?<=<%text>)'
-        'end': '(?=</%text>)'
-        'name': 'comment.block'
+        'begin': '(?i)(?<=<%text>)'
+        'end': '(?i)(?=</%text>)'
+        'name': 'source.perl.mason.'
       }
     ]
   }
   {
-    'begin': '(<(%doc)>)'
+    'begin': '(?i)(<%(doc)>)'
     'captures':
       '1':
-        'name': 'keyword.control'
+        'name': 'punctuation.section.comment'
       '2':
-        'name': 'variable.other'
-    'end': '(</(%doc)>)'
-    'name': 'source.perl.mason.doc'
+        'name': 'keywork.control.comment'
+    'end': '(?i)(</(%doc)>)'
+    'name': 'source.perl.mason.comment.block'
     'patterns': [
       {
-        'begin': '(?<=<%doc>)'
-        'end': '(?=</%doc>)'
+        'begin': '(?i)(?<=<%doc>)'
+        'end': '(?i)(?=</%doc>)'
         'name': 'comment.block'
       }
     ]
@@ -118,13 +118,13 @@
     ]
   }
   {
-    'begin': '(<%(args.*?)>)'
+    'begin': '(?i)(<%(args.*?)>)'
     'captures':
       '1':
         'name': 'keyword.control'
       '2':
         'name': 'variable.other'
-    'end': '(</%(\\2)>)'
+    'end': '(?i)(</%(\\2)>)'
     'name': 'source.mason.args'
     'patterns': [
       {
@@ -137,13 +137,13 @@
     ]
   }
   {
-    'begin': '(<%(method|def|closure) .*?>)'
+    'begin': '(?i)(<%(method|def|closure) .*?>)'
     'captures':
       '1':
         'name': 'keyword.control'
       '2':
         'name': 'variable.other'
-    'end': '(</%(\\2)>)[^\\n]*\\n?'
+    'end': '(?i)(</%(\\2)>)[^\\n]*\\n?'
     'name': 'source.mason.methods'
     'patterns': [
       {
